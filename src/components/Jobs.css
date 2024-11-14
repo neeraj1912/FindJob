@@ -1,0 +1,180 @@
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.pagination-controls button {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.pagination-controls button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    background-color: darkgreen;
+}
+
+/* Hover Animation for Job Cards */
+.JobItem {
+  position: relative;
+  max-width: 80%;
+  margin: 3em auto;
+  padding: 1em 2em;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 12px 50px -4px rgba(91, 164, 164, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.JobItem:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0px 20px 60px -6px rgba(91, 164, 164, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Avatar zoom effect inside the job card */
+.JobItem-left__Avatar img {
+  max-width: 50px;
+  transition: transform 0.3s ease; /* Smooth zoom effect for avatar */
+}
+
+.JobItem:hover .JobItem-left__Avatar img {
+  transform: scale(1.1); /* Zoom the avatar on hover */
+}
+
+/* Hover effect for tags inside job card */
+.JobItem-right__Taxonomy span:hover {
+  background: var(--dark-green);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modal-content {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Apply Button Styling */
+.apply-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.apply-btn {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: darkgreen;
+}
+
+/* View Details Button */
+.view-details-btn {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+  
+.view-details-btn:hover {
+    background-color: darkgreen;
+}
+
+/* No Jobs Found Message */
+.no-jobs-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+/* Search and Filter Controls */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.search-bar-container {
+    position: relative; /* Positioning context for the button */
+}
+
+.search-bar {
+    width: 300px;
+    padding: 0.5em;
+    padding-right: 2em; /* Add space on the right for the clear button */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 10px; /* Position it at the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the button */
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.clear-btn:hover {
+    color: var(--dark-green); /* Change color on hover */
+}
+
+.job-type-dropdown {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+
