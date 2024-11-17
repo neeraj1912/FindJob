@@ -83,7 +83,7 @@ export default function Jobs() {
 
   return (
     <section className="jobs">
-      <header></header>
+      <header>Find A Job</header>
 
       {/* Search and Filter Controls */}
 <div className="filter-controls">
