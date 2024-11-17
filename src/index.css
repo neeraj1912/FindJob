@@ -4,7 +4,7 @@ header {
     font-size: 2.5em; /* Adjust size as needed */
     font-weight: bold;
     margin-top: 1em;
-    color: var(--dark-green); /* Optional: use your theme color */
+    color: var(black);
 }
 
 
