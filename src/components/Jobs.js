@@ -35,6 +35,11 @@ export default function Jobs() {
     doFilter();
   }, [searchQuery, jobType, doFilter]);
 
+  // Reset pagination when filters change to avoid empty pages
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, jobType]);
+
   const clearSearch = () => {
     setSearchQuery("");
   };
